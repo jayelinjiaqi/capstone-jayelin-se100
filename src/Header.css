@@ -10,19 +10,12 @@
       padding: 20px;
     }
 
-    .finance-logo{
-        margin-right: 32px;
-    }
   }
 
 @media (max-width: 1200px) { /*smaller screen */
     .header {
       font-size: 24px;
       padding: 19px;
-    }
-
-    .finance-logo{
-        margin-right: 31px;
     }
   }
 
@@ -32,9 +25,6 @@
       padding: 18px;
     }
 
-    .finance-logo{
-        margin-right: 30px;
-    }
   }
 
 @media (max-width: 1000px) { /*smaller screen */
@@ -43,9 +33,6 @@
       padding: 17px;
     }
 
-    .finance-logo{
-        margin-right: 28px;
-    }
   }
 
 @media (max-width: 900px) { /*smaller screen */
@@ -54,9 +41,6 @@
       padding: 16px;
     }
 
-    .finance-logo{
-        margin-right: 25px;
-    }
   }
 
 @media (max-width: 800px) { /*smaller screen */
@@ -106,5 +90,5 @@
 .finance-logo {
     width: 50px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 1px; /* Space between logo and text */
+    margin-right: 10px; /* Space between logo and text */
 }
