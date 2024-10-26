@@ -47,15 +47,34 @@ button:hover {
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  .stock-list {
+    margin-top: 29px;
+    text-align: center;
+  }
+}
+
 .stock-list h2 {
   font-weight: bold;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
+@media (max-width: 400px) { /*smaller screen */
+  .stock-list h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: 600px) {
   .stock-list h2 {
     font-size: 30px; /* Increase on larger screens */
+  }
+
+  .stock-info p {
+    font-size: 20px; /* Increase stock info font size */
   }
 }
 
@@ -64,11 +83,26 @@ button:hover {
   font-size: 18px;
 }
 
-@media (min-width: 600px) {
+
+/* Ensure larger screens have better readability */
+@media (min-width: 800px) {
+  .container {
+    padding: 40px; /* More padding on larger screens */
+  }
+
+  .stock-list h2 {
+    font-size: 32px; /* Increase header font size */
+  }
+
   .stock-info p {
-    font-size: 20px; /* Increase on larger screens */
+    font-size: 22px; /* Increase stock info font size */
+  }
+
+  button {
+    padding: 10px 20px; /* Increase button size */
   }
 }
+
 
 .profit {
   color: green;
