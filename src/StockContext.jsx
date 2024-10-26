@@ -1,5 +1,5 @@
 import React, { createContext, useState, useCallback } from 'react';
-import { stockList } from './stockData'; // Updated import
+import { stockList } from './stockData';
 
 export const StockContext = createContext();
 
@@ -12,7 +12,7 @@ const StockProvider = ({ children }) => {
             quantity,
             purchasePrice,
             currentPrice,
-            profitLoss: quantity * (currentPrice - purchasePrice)
+            profitLoss: quantity * (currentPrice - purchasePrice),
         };
         setStocks([...stocks, newStock]);
     };
