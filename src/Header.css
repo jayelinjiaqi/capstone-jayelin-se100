@@ -4,6 +4,27 @@
     padding: 20px; /* Add some padding */
 }
 
+@media (max-width: 1100px) { /*smaller screen */
+    .header {
+      font-size: 34px;
+      padding: 10px;
+    }
+  }
+
+@media (max-width: 1000px) { /*smaller screen */
+    .header {
+      font-size: 32px;
+      padding: 10px;
+    }
+  }
+
+@media (max-width: 900px) { /*smaller screen */
+    .header {
+      font-size: 30px;
+      padding: 10px;
+    }
+  }
+
 @media (max-width: 400px) { /*smaller screen */
     .header {
       font-size: 12px;
