@@ -1,5 +1,11 @@
 .header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 30px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding */
+}
+
+.finance-logo {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
 }
