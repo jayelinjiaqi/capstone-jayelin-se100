@@ -6,7 +6,7 @@
 
 .searchInput {
     width: 100px;
-    padding: 5px;
+    padding: 8px, 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -22,7 +22,7 @@
 }
 
 .suggestionItem {
-    padding: 8px;
+    padding: 1px;
     cursor: pointer;
 }
 
