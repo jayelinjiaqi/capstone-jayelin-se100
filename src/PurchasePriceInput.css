@@ -1,20 +1,5 @@
-/* Common styles for label and input alignment */
-.form-label {
-    width: 150px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.quantity-input,
+/* PurchasePriceInput.css */
 .purchaseprice-input {
-    display: flex;
-    align-items: center;
-}
-
-.quantity-textbox,
-.purchaseprice-textbox {
-    width: 150px;
-    padding: 8px;
-    border: 1px solid #6a6767;
-    border-radius: 4px;
+    width: 100px;
+    padding: 5px;
 }

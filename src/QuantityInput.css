@@ -1,11 +1,5 @@
+/* QuantityInput.css */
 .quantity-input {
-    width: 100%;
-    padding: 8px;
-}
-
-.quantity-textbox {
-    width: 60px;
+    width: 80px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }

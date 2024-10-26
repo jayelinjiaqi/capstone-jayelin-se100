@@ -1,9 +1,11 @@
-import './StockDropdown.css';
+// Dropdown.jsx
 import { useState } from 'react';
-import { stockList } from './StockList';
+import { stockList } from './stockList';
+import './Dropdown.css';
 
-const StockDropdown = ({ searchTerm, setSearchTerm }) => {
+const StockDropdown = () => {
     const [suggestions, setSuggestions] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -19,28 +21,19 @@ const StockDropdown = ({ searchTerm, setSearchTerm }) => {
         }
     };
 
-    const handleSuggestionClick = (symbol) => {
-        setSearchTerm(symbol);
-        setSuggestions([]);
-    };
-
     return (
         <div className="dropdown-container">
-            <input 
-                type="text" 
-                placeholder="Stock Symbol" 
-                value={searchTerm} 
+            <input
+                type="text"
+                placeholder="Enter stock symbol"
+                value={searchTerm}
                 onChange={handleChange}
-                className="searchInput"
+                className="dropdown-input"
             />
             {suggestions.length > 0 && (
-                <div className="suggestionBox">
+                <div className="suggestions">
                     {suggestions.map((stock, index) => (
-                        <div 
-                            key={index} 
-                            className="suggestionItem" 
-                            onClick={() => handleSuggestionClick(stock.symbol)}
-                        >
+                        <div key={index} className="suggestion-item">
                             {stock.symbol} - {stock.name}
                         </div>
                     ))}
