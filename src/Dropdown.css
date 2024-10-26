@@ -1,10 +1,10 @@
 .dropdown-container {
-    width: 50%; /* Set width as needed */
+    width: 80%; /* Set width as needed */
     padding: 8px 15px;
 }
 
 .searchInput {
-    width: 50px;
+    width: 80px;
     padding: 8px 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
