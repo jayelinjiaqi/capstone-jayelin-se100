@@ -103,6 +103,24 @@ button:hover {
   }
 }
 
+@media (min-width: 800px) {
+  .container {
+    padding: 60px; /* More padding on larger screens */
+  }
+
+  .stock-list h2 {
+    font-size: 34px; /* Increase header font size */
+  }
+
+  .stock-info p {
+    font-size: 24px; /* Increase stock info font size */
+  }
+
+  button {
+    padding: 12px 22px; /* Increase button size */
+  }
+}
+
 
 .profit {
   color: green;
