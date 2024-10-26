@@ -1,0 +1,23 @@
+.stock-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.stock-list h2{
+    font-size: large;
+}
+
+.stock-info p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.profit {
+    color: green;
+    font-weight: bold;
+}
+
+.loss {
+    color: red;
+    font-weight: bold;
+}
