@@ -11,6 +11,13 @@
     }
   }
 
+  @media (max-width: 300px) { /*smaller screen */
+    .header {
+      font-size: 9px;
+      padding: 10px;
+    }
+  }
+
 .finance-logo {
     width: 50px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
