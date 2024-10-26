@@ -1,8 +1,9 @@
 .container {
-  max-width: fit-content;
+  max-width: 800px;
+  min-width: 300px;
   margin: auto;
   text-align: center;
-  padding: 200px;
+  padding: 20%;
 }
 
 .input-row {
