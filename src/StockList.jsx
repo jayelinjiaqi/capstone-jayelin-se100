@@ -1,14 +1,24 @@
-// StockList.jsx
-import { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { StockContext } from './StockContext';
 import './StockList.css';
 
 const StockList = () => {
     const { stocks } = useContext(StockContext);
 
+    useEffect(() => {
+        const fetchPrices = async () => {
+            for (const stock of stocks) {
+                if (!stock.currentPrice) {
+                    // Optional: Fetch current price again if stock list updates
+                }
+            }
+        };
+        fetchPrices();
+    }, [stocks]);
+
     return (
         <div className="stock-list">
-            <h2><strong>Stock List</strong></h2>
+            <h2>Stock List</h2>
             {stocks.length === 0 ? (
                 <p>No stocks added yet.</p>
             ) : (
