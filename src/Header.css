@@ -9,12 +9,20 @@
       font-size: 26px;
       padding: 20px;
     }
+
+    .finance-logo{
+        margin-right: 32px;
+    }
   }
 
 @media (max-width: 1200px) { /*smaller screen */
     .header {
       font-size: 24px;
       padding: 19px;
+    }
+
+    .finance-logo{
+        margin-right: 31px;
     }
   }
 
@@ -23,12 +31,20 @@
       font-size: 22px;
       padding: 18px;
     }
+
+    .finance-logo{
+        margin-right: 30px;
+    }
   }
 
 @media (max-width: 1000px) { /*smaller screen */
     .header {
       font-size: 20px;
       padding: 17px;
+    }
+
+    .finance-logo{
+        margin-right: 28px;
     }
   }
 
@@ -37,12 +53,20 @@
       font-size: 18px;
       padding: 16px;
     }
+
+    .finance-logo{
+        margin-right: 25px;
+    }
   }
 
 @media (max-width: 800px) { /*smaller screen */
     .header {
       font-size: 17px;
       padding: 15px;
+    }
+
+    .finance-logo{
+        margin-right: 20px;
     }
   }
   
