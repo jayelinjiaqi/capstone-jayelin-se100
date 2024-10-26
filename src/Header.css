@@ -64,10 +64,6 @@
       font-size: 17px;
       padding: 15px;
     }
-
-    .finance-logo{
-        margin-right: 30px;
-    }
   }
   
 
@@ -75,10 +71,6 @@
     .header {
       font-size: 16px;
       padding: 14px;
-    }
-
-    .finance-logo{
-        margin-right: 25px;
     }
   }
 
@@ -114,5 +106,5 @@
 .finance-logo {
     width: 50px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between logo and text */
+    margin-right: 1px; /* Space between logo and text */
 }
