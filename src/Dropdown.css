@@ -1,6 +1,7 @@
 .dropdown-container {
     position: relative;
-    width: 80px; /* Set width as needed */
+    width: 90px; /* Set width as needed */
+    padding: 8px 15px;
 }
 
 .searchInput {
@@ -14,7 +15,7 @@
     position: absolute;
     background: white;
     border: 1px solid #ccc;
-    width: 180px;
+    width: 80px;
     max-height: 150px;
     overflow-y: auto;
     z-index: 10;
