@@ -1,4 +1,4 @@
-import './StockDropdown.css';
+import './Dropdown.css';
 import { useState } from 'react';
 import { stockList } from './stockList';
 
