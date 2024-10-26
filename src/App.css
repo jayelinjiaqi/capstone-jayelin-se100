@@ -33,13 +33,13 @@ button:hover {
 
 .stock-list h2 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .stock-info p {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .profit {
