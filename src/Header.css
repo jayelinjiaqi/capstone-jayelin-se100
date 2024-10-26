@@ -6,7 +6,7 @@
 
 @media (max-width: 400px) { /*smaller screen */
     .header {
-      font-size: 24px;
+      font-size: 15px;
       padding: 10px;
     }
   }
