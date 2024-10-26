@@ -1,5 +1,5 @@
 import React from 'react';
-import financeLogo from './assets/finance.jpg';
+import financeLogo from './assets/finance.png';
 import './Header.css';
 
 const Header = () => {
