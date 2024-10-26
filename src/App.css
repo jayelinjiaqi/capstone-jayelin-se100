@@ -10,6 +10,16 @@
   .container {
     flex-direction: column;
     justify-content: left;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 200px) {
+  .container {
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding: 5px;
   }
 }
 
