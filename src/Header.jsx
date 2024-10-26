@@ -1,13 +1,13 @@
 import React from 'react';
+import financeLogo from './assets/finance.jpg';
 import './Header.css';
-import financeLogo from '/src/assets/finance.jpg'; // Adjusted path
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <img src={financeLogo} alt="Finance Logo" className="finance-logo" />
             <h1>Finance Dashboard</h1>
-        </div>
+        </header>
     );
 };
 
