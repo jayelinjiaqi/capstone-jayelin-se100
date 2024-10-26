@@ -1,14 +1,10 @@
 import React from 'react';
-import financeLogo from './assets/finance.png';
 import './Header.css';
 
-const Header = () => {
-    return (
-        <header className="header">
-            <img src={financeLogo} alt="Finance Logo" className="finance-logo" />
-            <h1>Finance Dashboard</h1>
-        </header>
-    );
-};
+const Header = () => (
+    <div className="header">
+        <h1>Finance Dashboard</h1>
+    </div>
+);
 
 export default Header;

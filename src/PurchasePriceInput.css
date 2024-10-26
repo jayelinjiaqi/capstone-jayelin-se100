@@ -1,5 +1,11 @@
-/* PurchasePriceInput.css */
 .purchaseprice-input {
-    width: 100px;
+    width: 100%;
+    padding: 8px;
+}
+
+.purchaseprice-textbox {
+    width: 80px;
     padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

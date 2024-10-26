@@ -1,12 +1,5 @@
-/* Header.css */
 .header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.finance-logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
 }

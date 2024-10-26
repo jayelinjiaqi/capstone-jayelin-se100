@@ -1,22 +1,22 @@
-// QuantityInput.jsx
-import { useState } from 'react';
 import './QuantityInput.css';
+import React from 'react';
 
-const QuantityInput = () => {
-    const [quantity, setQuantity] = useState("");
-
+const QuantityInput = ({ quantity, setQuantity }) => {
     const handleChange = (e) => {
         const value = e.target.value;
-        if (/^\d*$/.test(value)) setQuantity(value);
+        if (value >= 1) {
+            setQuantity(value);
+        }
     };
 
     return (
         <input
-            type="text"
+            type="number"
+            placeholder="Quantity"
             value={quantity}
             onChange={handleChange}
-            placeholder="Quantity"
-            className="quantity-input"
+            min="1"
+            className="quantity-textbox"
         />
     );
 };

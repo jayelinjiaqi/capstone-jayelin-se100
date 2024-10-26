@@ -1,24 +1,33 @@
-/* Dropdown.css */
-.dropdown-container {
+.container {
     position: relative;
-    width: 150px;
 }
 
-.dropdown-input {
+.searchInput {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.suggestions {
+.suggestionBox {
     position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
-    max-height: 150px;
-    overflow-y: auto;
     z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
-.suggestion-item {
-    padding: 5px;
+.suggestionItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestionItem:hover {
+    background-color: #f0f0f0;
 }

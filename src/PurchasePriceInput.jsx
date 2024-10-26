@@ -1,22 +1,21 @@
-// PurchasePriceInput.jsx
-import { useState } from 'react';
 import './PurchasePriceInput.css';
+import React from 'react';
 
-const PurchasePriceInput = () => {
-    const [purchasePrice, setPurchasePrice] = useState("");
-
+const PurchasePriceInput = ({ purchasePrice, setPurchasePrice }) => {
     const handleChange = (e) => {
         const value = e.target.value;
-        if (/^\d*\.?\d{0,2}$/.test(value)) setPurchasePrice(value);
+        if (/^\d*\.?\d{0,2}$/.test(value) || value === "") {
+            setPurchasePrice(value);
+        }
     };
 
     return (
         <input
             type="text"
+            placeholder="Purchase Price (USD)"
             value={purchasePrice}
             onChange={handleChange}
-            placeholder="Purchase Price (USD)"
-            className="purchaseprice-input"
+            className="purchaseprice-textbox"
         />
     );
 };
