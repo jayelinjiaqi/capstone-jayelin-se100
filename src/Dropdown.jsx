@@ -1,6 +1,6 @@
 import './StockDropdown.css';
 import { useState } from 'react';
-import { stockList } from './stockList';
+import { stockList } from './StockList';
 
 const StockDropdown = ({ searchTerm, setSearchTerm }) => {
     const [suggestions, setSuggestions] = useState([]);
