@@ -85,7 +85,7 @@ button:hover {
 
 
 /* Ensure larger screens have better readability */
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .container {
     padding: 40px; /* More padding on larger screens */
   }
