@@ -1,5 +1,5 @@
 .container {
-  max-width: 800px;
+  max-width: fit-content;
   margin: auto;
   text-align: center;
   padding: 200px;
