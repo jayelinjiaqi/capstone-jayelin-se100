@@ -4,8 +4,8 @@
 }
 
 .searchInput {
-    width: 100%;
-    padding: 8px;
+    width: 80px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -14,7 +14,7 @@
     position: absolute;
     background: white;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 180px;
     max-height: 150px;
     overflow-y: auto;
     z-index: 10;
@@ -28,3 +28,5 @@
 .suggestionItem:hover {
     background-color: #f0f0f0;
 }
+
+
