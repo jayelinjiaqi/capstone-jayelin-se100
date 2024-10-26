@@ -36,7 +36,7 @@ function App() {
                 <StockDropdown searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                 <QuantityInput quantity={quantity} setQuantity={setQuantity} />
                 <PurchasePriceInput purchasePrice={purchasePrice} setPurchasePrice={setPurchasePrice} />
-                <button onClick={handleCalculateProfitLoss}>Calculate Profit/Loss</button>
+                <button onClick={handleCalculateProfitLoss}>Add Stock</button>
             </div>
 
             <div className="stock-list">

@@ -1,6 +1,6 @@
 import './Dropdown.css';
 import { useState } from 'react';
-import { stockList } from './stockList';
+import { StockList } from './StockList'; // Import StockList
 
 const StockDropdown = ({ searchTerm, setSearchTerm }) => {
     const [suggestions, setSuggestions] = useState([]);
@@ -10,7 +10,8 @@ const StockDropdown = ({ searchTerm, setSearchTerm }) => {
         setSearchTerm(value);
 
         if (value) {
-            const filteredSuggestions = stockList.filter(stock =>
+            // Filter the StockList based on user input
+            const filteredSuggestions = StockList.filter(stock =>
                 stock.symbol.toLowerCase().startsWith(value.toLowerCase())
             );
             setSuggestions(filteredSuggestions);
