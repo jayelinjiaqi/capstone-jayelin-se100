@@ -10,7 +10,6 @@
 /* Flex row for input fields */
 .input-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   align-items: center;
@@ -18,11 +17,43 @@
   margin-top: 20px;
 }
 
-/* Standardize input widths */
+/* Apply uniform width to all input elements inside input-row */
 .input-row > * {
-  width: 180px; /* Set equal width for all inputs */
-  min-width: 150px;
-  flex-grow: 1;
+  flex: 1; /* Allow items to flex for equal spacing */
+  max-width: 210px; /* Set max width */
+}
+
+/* Stock symbol input box adjustments */
+.dropdown-container {
+  width: 100%; /* Full width within flex item */
+  padding: 8px 0; /* Adjust padding to match other input elements */
+}
+
+.searchInput {
+  width: 100%; /* Match width with other inputs */
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Suggestions box styling */
+.suggestionBox {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%; /* Match input width */
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.suggestionItem {
+  padding: 1px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background-color: #f0f0f0;
 }
 
 /* Button styling */
