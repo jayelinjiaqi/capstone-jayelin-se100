@@ -10,6 +10,7 @@
 /* Flex row for input fields */
 .input-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px; /* Equal space between each input */
   justify-content: center;
   align-items: center;
@@ -19,20 +20,44 @@
 
 /* Apply uniform flex properties to each input item */
 .input-row > * {
-  flex: 1 1 210px; /* Allow items to grow equally and set consistent width */
+  flex: 1 1 180px; /* Allow items to grow equally and set consistent width */
   max-width: 210px; /* Prevent excessive width on larger screens */
-  min-width: 150px; /* Ensure minimum width on smaller screens */
+  min-width: 120px; /* Ensure minimum width on smaller screens */
 }
 
 /* Stock symbol input box adjustments */
 .dropdown-container {
   width: 100%; /* Full width within flex item */
-  padding: 8px 0; /* Adjust padding to match other input elements */
+  padding: 0; /* No additional padding */
 }
 
 .searchInput {
   width: 100%; /* Match width with other inputs */
-  padding: 8px 15px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Quantity input adjustments */
+.quantity-input {
+  width: 100%;
+}
+
+.quantity-textbox {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Purchase price input adjustments */
+.purchaseprice-input {
+  width: 100%;
+}
+
+.purchaseprice-textbox {
+  width: 100%;
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
