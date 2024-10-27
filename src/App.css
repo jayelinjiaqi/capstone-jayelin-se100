@@ -10,10 +10,11 @@
 
 .stock-list{
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .stock-info{
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
