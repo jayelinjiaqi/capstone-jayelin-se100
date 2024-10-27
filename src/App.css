@@ -1,50 +1,22 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   width: 90%;
   margin: auto;
-  text-align: center;
   padding: 20px;
-}
-
-@media (max-width: 300px) {
-  .container {
-    flex-direction: column;
-    justify-content: left;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 200px) {
-  .container {
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    padding: 5px;
-  }
+  text-align: center;
 }
 
 .input-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between each input */
+  gap: 20px;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-@media (max-width: 480px) {
-  .input-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-@media (max-width: 300px) {
-  .input-row {
-    flex-direction: column;
-    gap: 5px;
-    justify-content: left;
-  }
+  width: 100%;
 }
 
 button {
@@ -55,12 +27,7 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-@media (min-width: 600px) {
-  button {
-    font-size: 16px;
-  }
+  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -69,84 +36,20 @@ button:hover {
 
 .stock-list {
   margin-top: 30px;
-  margin-left: 10px;
+  width: 100%;
   text-align: left;
-}
-
-@media (max-width: 600px) {
-  .stock-list {
-    margin-top: 29px;
-    text-align: center;
-  }
 }
 
 .stock-list h2 {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2em;
   margin-bottom: 10px;
-}
-
-@media (max-width: 400px) { /*smaller screen */
-  .stock-list h2 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: 600px) {
-  .stock-list h2 {
-    font-size: 30px; /* Increase on larger screens */
-  }
-
-  .stock-info p {
-    font-size: 20px; /* Increase stock info font size */
-  }
 }
 
 .stock-info p {
   margin: 5px 0;
-  font-size: 18px;
+  font-size: 1.1em;
 }
-
-
-/* Ensure larger screens have better readability */
-@media (min-width: 700px) {
-  .container {
-    padding: 40px; /* More padding on larger screens */
-  }
-
-  .stock-list h2 {
-    font-size: 32px; /* Increase header font size */
-  }
-
-  .stock-info p {
-    font-size: 22px; /* Increase stock info font size */
-  }
-
-  button {
-    padding: 10px 20px; /* Increase button size */
-  }
-}
-
-@media (min-width: 800px) {
-  .container {
-    padding: 60px; /* More padding on larger screens */
-  }
-
-  .stock-list h2 {
-    font-size: 34px; /* Increase header font size */
-  }
-
-  .stock-info p {
-    font-size: 24px; /* Increase stock info font size */
-  }
-
-  button {
-    padding: 12px 22px; /* Increase button size */
-  }
-}
-
 
 .profit {
   color: green;
@@ -154,4 +57,29 @@ button:hover {
 
 .loss {
   color: red;
+}
+
+/* Additional responsive behavior using flex */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stock-list h2 {
+    font-size: 1.5em;
+  }
+
+  .stock-info p {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
