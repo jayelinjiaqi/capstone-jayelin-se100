@@ -1,28 +1,20 @@
-/* Container setup */
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
+/* Center the container */
 .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  width: 90%;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  overflow-y: auto; /* Allows vertical scrolling if content overflows */
 }
 
+/* Row layout for inputs */
 .input-row {
   display: flex;
-  gap: 15px; /* Consistent gap between input boxes */
+  flex-wrap: wrap;
+  gap: 15px; /* Consistent space between inputs */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -30,11 +22,11 @@ body {
 }
 
 .input-row > * {
-  flex: 1 1 200px; /* Flexible width for each input box */
-  max-width: 200px;
-  min-width: 150px;
+  flex: 1 1 150px; /* Each element takes equal space, with a minimum width */
+  min-width: 100px;
 }
 
+/* Button styling */
 button {
   padding: 8px 15px;
   font-size: 14px;
@@ -50,23 +42,37 @@ button:hover {
   background-color: #408bec;
 }
 
+/* Stock list styling */
 .stock-list {
   margin-top: 30px;
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
+/* Stock list headings */
 .stock-list h2 {
   font-weight: bold;
-  font-size: 2em;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
-.stock-info p {
-  margin: 5px 0;
-  font-size: 1.1em;
+/* Responsive adjustments using flex wrap */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stock-list {
+    text-align: center;
+  }
+
+  .stock-list h2 {
+    font-size: 24px;
+  }
 }
 
+/* Profit and loss colors */
 .profit {
   color: green;
 }
@@ -74,6 +80,3 @@ button:hover {
 .loss {
   color: red;
 }
-
-/* Responsive adjustments */
-@media (max
