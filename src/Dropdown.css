@@ -5,7 +5,6 @@
 }
 
 .searchInput {
-    /*width: 170px;*/
     padding: 8px 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -15,13 +14,14 @@
     position: absolute;
     background: white;
     border: 1px solid #ccc;
-    /*width: 170px;*/
     max-height: 150px;
     overflow-y: auto;
     z-index: 10;
 }
 
 .suggestionItem {
+    font-size: 8px;
+    margin-left: 1px;
     padding: 1px;
     cursor: pointer;
 }
