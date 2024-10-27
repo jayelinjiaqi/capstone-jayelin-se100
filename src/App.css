@@ -1,38 +1,31 @@
-/* Main container styling */
-.container {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  padding: 20px;
-}
+/* ... other CSS ... */
 
-/* Flex row for input fields */
 .input-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Equal space between each input */
+  gap: 20px;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
 }
 
-/* Apply uniform flex properties to each input item */
 .input-row > * {
-  flex: 1 1 180px; /* Allow items to grow equally and set consistent width */
-  max-width: 210px; /* Prevent excessive width on larger screens */
-  min-width: 120px; /* Ensure minimum width on smaller screens */
+  flex: 1 1 180px;
+  max-width: 210px;
+  min-width: 120px;
 }
+
+/* ... other CSS ... */
 
 /* Stock symbol input box adjustments */
 .dropdown-container {
-  width: 100%; /* Full width within flex item */
-  padding: 0; /* No additional padding */
+  /* Remove fixed width */
+  padding: 0;
 }
 
 .searchInput {
-  width: 100%; /* Match width with other inputs */
+  width: 100%;
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -40,7 +33,7 @@
 
 /* Quantity input adjustments */
 .quantity-input {
-  width: 100%;
+  /* Remove fixed width */
 }
 
 .quantity-textbox {
@@ -52,7 +45,7 @@
 
 /* Purchase price input adjustments */
 .purchaseprice-input {
-  width: 100%;
+  /* Remove fixed width */
 }
 
 .purchaseprice-textbox {
@@ -62,77 +55,4 @@
   border-radius: 4px;
 }
 
-/* Suggestions box styling */
-.suggestionBox {
-  position: absolute;
-  background: white;
-  border: 1px solid #ccc;
-  width: 100%; /* Match input width */
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-}
-
-.suggestionItem {
-  padding: 1px;
-  cursor: pointer;
-}
-
-.suggestionItem:hover {
-  background-color: #f0f0f0;
-}
-
-/* Button styling */
-button {
-  padding: 8px 15px;
-  font-size: 14px;
-  background-color: rgb(69, 69, 221);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #408bec;
-}
-
-/* Stock list styling */
-.stock-list {
-  margin-top: 30px;
-  text-align: left;
-  width: 100%;
-}
-
-/* Stock list headings */
-.stock-list h2 {
-  font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .input-row {
-    flex-direction: column;
-    gap: 10px; /* Smaller gap on small screens */
-  }
-
-  .stock-list {
-    text-align: center;
-  }
-
-  .stock-list h2 {
-    font-size: 24px;
-  }
-}
-
-/* Profit and loss colors */
-.profit {
-  color: green;
-}
-
-.loss {
-  color: red;
-}
+/* ... other CSS ... */
