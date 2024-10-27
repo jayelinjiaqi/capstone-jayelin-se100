@@ -1,7 +1,8 @@
 .header {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add some padding */
+    display: flex; 
+
+    justify-content: center;
+    padding: 20px;
 }
 
 .finance-logo {
