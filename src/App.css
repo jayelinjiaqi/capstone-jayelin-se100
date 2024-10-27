@@ -1,7 +1,6 @@
 .container{
   display: flex;
   margin: 180px 180px;
-  justify-content: center;
 }
 
 .input-row {
