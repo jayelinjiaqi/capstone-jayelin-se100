@@ -1,5 +1,7 @@
 .container{
-  margin: 100px 100px
+  display: flex;
+  margin: 180px 180px;
+  align-items: center;
 }
 
 .input-row {
