@@ -1,4 +1,6 @@
-/* ... other CSS ... */
+.container{
+  justify-content: center;
+}
 
 .input-row {
   display: flex;
