@@ -21,4 +21,14 @@
 .stock-info{
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
+
+.profit {
+  color: green;
+  }
+
+.loss {
+  color: red;
+  }
+  
