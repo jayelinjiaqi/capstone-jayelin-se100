@@ -7,17 +7,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-}
-
-/* Stock symbol input box adjustments */
-.dropdown-container {
-  /* Remove fixed width */
-  padding: 0;
-}
-
-.searchInput {
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
