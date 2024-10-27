@@ -9,8 +9,6 @@
   margin-top: 20px;
 }
 
-
-
 /* Stock symbol input box adjustments */
 .dropdown-container {
   /* Remove fixed width */
@@ -18,34 +16,8 @@
 }
 
 .searchInput {
-  width: 100%;
   padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-/* Quantity input adjustments */
-.quantity-input {
-  /* Remove fixed width */
-}
-
-.quantity-textbox {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Purchase price input adjustments */
-.purchaseprice-input {
-  /* Remove fixed width */
-}
-
-.purchaseprice-textbox {
-  width: 100%;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* ... other CSS ... */
