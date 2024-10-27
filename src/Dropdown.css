@@ -4,7 +4,7 @@
 }
 
 .searchInput {
-    width: 210px;
+    width: 180px;
     padding: 8px 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -14,7 +14,7 @@
     position: absolute;
     background: white;
     border: 1px solid #ccc;
-    width: 210px;
+    width: 180px;
     max-height: 150px;
     overflow-y: auto;
     z-index: 10;
