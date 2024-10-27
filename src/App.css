@@ -22,8 +22,7 @@ body {
 
 .input-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px; /* Consistent gap between input boxes */
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -31,8 +30,9 @@ body {
 }
 
 .input-row > * {
-  flex: 1 1 200px;
+  flex: 1 1 200px; /* Flexible width for each input box */
   max-width: 200px;
+  min-width: 150px;
 }
 
 button {
@@ -76,38 +76,4 @@ button:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 800px) {
-  .container {
-    padding: 10px;
-  }
-
-  .input-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .stock-list {
-    text-align: center;
-  }
-
-  .stock-list h2 {
-    font-size: 1.5em;
-  }
-
-  .stock-info p {
-    font-size: 1em;
-  }
-
-  button {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
-
-@media (max-height: 600px) {
-  .container {
-    padding-bottom: 15px;
-    overflow-y: scroll;
-    max-height: 100vh;
-  }
-}
+@media (max
