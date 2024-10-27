@@ -10,17 +10,18 @@
 /* Flex row for input fields */
 .input-row {
   display: flex;
-  gap: 15px;
+  gap: 20px; /* Equal space between each input */
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
 }
 
-/* Apply uniform width to all input elements inside input-row */
+/* Apply uniform flex properties to each input item */
 .input-row > * {
-  flex: 1; /* Allow items to flex for equal spacing */
-  max-width: 210px; /* Set max width */
+  flex: 1 1 210px; /* Allow items to grow equally and set consistent width */
+  max-width: 210px; /* Prevent excessive width on larger screens */
+  min-width: 150px; /* Ensure minimum width on smaller screens */
 }
 
 /* Stock symbol input box adjustments */
@@ -90,7 +91,7 @@ button:hover {
 @media (max-width: 768px) {
   .input-row {
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /* Smaller gap on small screens */
   }
 
   .stock-list {
