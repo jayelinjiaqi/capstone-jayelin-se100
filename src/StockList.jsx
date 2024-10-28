@@ -1,5 +1,3 @@
-// stockList.js
-
 export const StockList = [
     // A
     { symbol: "AAPL", name: "Apple Inc." },
