@@ -16,13 +16,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .stock-info{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
 }
 
 .profit {
